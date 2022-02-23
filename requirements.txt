@@ -1,0 +1,5 @@
+fuzzywuzzy==0.18.0
+fuzzy-match==0.0.1
+numpy==1.19.5
+django==3.2.5
+mysqlclient==2.0.3

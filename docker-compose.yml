@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+
+  django:
+    build: ./satan_dj
+    ports:
+      - 8002:8002

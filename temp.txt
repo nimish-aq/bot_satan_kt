@@ -1,0 +1,14 @@
+#bot satan notifications
+0 */1 * * *  python3 ~/bot_satan_prod/project-satan-python/bot_satan_version_01/api_check_starter.py ~/bot_satan_prod/project-satan-python/bot_satan_version_01/notification_process_configs/dataUsageThresholdMet.json > ~/bot_satan_prod/project-satan-python/bot_satan_version_01/dataUsageThresholdMet.log 2>&1
+0 */1 * * *  python3 ~/bot_satan_prod/project-satan-python/bot_satan_version_01/api_check_starter.py ~/bot_satan_prod/project-satan-python/bot_satan_version_01/notification_process_configs/MeToDoNotification.json > ~/bot_satan_prod/project-satan-python/bot_satan_version_01/MeToDoNotification.log 2>&1
+0 */1 * * *  python3 ~/bot_satan_prod/project-satan-python/bot_satan_version_01/api_check_starter.py ~/bot_satan_prod/project-satan-python/bot_satan_version_01/notification_process_configs/notifyUserLimitExceedResponse.json > ~/bot_satan_prod/project-satan-python/bot_satan_version_01/notifyUserLimitExceedResponse.log 2>&1
+0 */1 * * *  python3 ~/bot_satan_prod/project-satan-python/bot_satan_version_01/api_check_starter.py ~/bot_satan_prod/project-satan-python/bot_satan_version_01/notification_process_configs/orderExpired.json > ~/bot_satan_prod/project-satan-python/bot_satan_version_01/orderExpired.log 2>&1
+
+0 */1 * * *  python3 /home/gcadmin/bot_satan_prod/project-satan-python/bot_satan_version_01/api_check_starter.py /home/gcadmin/bot_satan_prod/project-satan-python/bot_satan_version_01/sb_process.json > /home/gcadmin/bot_satan_prod/project-satan-python/bot_satan_version_01/sb_cronlog.log 2>&1
+
+0 */1 * * *  python3 /home/gcadmin/bot_satan_prod/project-satan-python/bot_satan_version_01/api_check_starter.py /home/gcadmin/bot_satan_prod/project-satan-python/bot_satan_version_01/nb_process.json > /home/gcadmin/bot_satan_prod/project-satan-python/bot_satan_version_01/nb_cronlog.log 2>&1
+python log
+
+cronjob log
+
+

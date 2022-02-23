@@ -1,0 +1,19 @@
+FROM python:3.8-slim
+# picking python base image from docker-hub
+
+# This prevents Python from writing out pyc files
+ENV PYTHONDONTWRITEBYTECODE 1
+
+# This keeps Python from buffering stdin/stdout
+ENV PYTHONUNBUFFERED 1
+
+RUN apt-get update -y                               && \
+    apt-get install default-libmysqlclient-dev -y           && \
+    apt-get install build-essential -y
+    apt-get install -r system_requirements.txt
+
+RUN pip install -r requirement.txt
+
+
+RUN pip install mysqlclient==2.0.3
+
